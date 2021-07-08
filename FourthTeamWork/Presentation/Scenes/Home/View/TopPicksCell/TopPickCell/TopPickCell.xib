@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="TopPickCell" customModule="FourthTeamWork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="128" height="272"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="128" height="272"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pool-bali" translatesAutoresizingMaskIntoConstraints="NO" id="v66-0E-80f">
+                        <rect key="frame" x="0.0" y="0.0" width="128" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="CRG-mL-usD"/>
+                            <constraint firstAttribute="width" constant="128" id="h9Q-Wj-u9t"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mSu-aL-ZDW">
+                        <rect key="frame" x="0.0" y="230" width="128" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="cW9-qZ-kib"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author Name" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EOe-uZ-VeW">
+                        <rect key="frame" x="0.0" y="263" width="128" height="9"/>
+                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="13"/>
+                        <color key="textColor" red="0.14117647058823529" green="0.12941176470588234" blue="0.14901960784313725" alpha="0.5" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="EOe-uZ-VeW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="2Qa-8C-JeV"/>
+                <constraint firstItem="mSu-aL-ZDW" firstAttribute="top" secondItem="v66-0E-80f" secondAttribute="bottom" constant="30" id="5sA-lX-T1s"/>
+                <constraint firstItem="v66-0E-80f" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="8ty-FP-z7a"/>
+                <constraint firstAttribute="trailing" secondItem="mSu-aL-ZDW" secondAttribute="trailing" id="Hhu-z5-cgW"/>
+                <constraint firstAttribute="trailing" secondItem="v66-0E-80f" secondAttribute="trailing" id="PD1-47-kSy"/>
+                <constraint firstItem="EOe-uZ-VeW" firstAttribute="top" secondItem="mSu-aL-ZDW" secondAttribute="bottom" constant="13" id="Qsc-YG-Arl"/>
+                <constraint firstAttribute="trailing" secondItem="EOe-uZ-VeW" secondAttribute="trailing" id="VnN-ai-2Zx"/>
+                <constraint firstAttribute="bottom" secondItem="EOe-uZ-VeW" secondAttribute="bottom" id="aDp-43-EBU"/>
+                <constraint firstItem="mSu-aL-ZDW" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="baT-Og-DGy"/>
+                <constraint firstItem="v66-0E-80f" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="l58-WE-uTP"/>
+            </constraints>
+            <connections>
+                <outlet property="authorNameLabel" destination="EOe-uZ-VeW" id="b8r-ui-g2E"/>
+                <outlet property="bookImageView" destination="v66-0E-80f" id="dBV-FP-5bW"/>
+                <outlet property="bookNameLabel" destination="mSu-aL-ZDW" id="qNl-pa-SVT"/>
+            </connections>
+            <point key="canvasLocation" x="15.942028985507248" y="116.51785714285714"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pool-bali" width="1920" height="1282"/>
+    </resources>
+</document>
