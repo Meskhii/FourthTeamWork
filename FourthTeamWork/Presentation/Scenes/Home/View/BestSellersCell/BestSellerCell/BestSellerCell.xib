@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="BestSellerCell" customModule="FourthTeamWork" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="122" height="275"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="122" height="275"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pool-bali" translatesAutoresizingMaskIntoConstraints="NO" id="eDf-Xb-2I3">
+                        <rect key="frame" x="0.0" y="0.0" width="122" height="200"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="200" id="UAG-hT-D1N"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Book Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Nr0-O2-nlp">
+                        <rect key="frame" x="0.0" y="220" width="122" height="18"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Author Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1Hz-64-4sk">
+                        <rect key="frame" x="0.0" y="238" width="122" height="15"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstItem="eDf-Xb-2I3" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="ACz-WM-fag"/>
+                <constraint firstItem="Nr0-O2-nlp" firstAttribute="top" secondItem="eDf-Xb-2I3" secondAttribute="bottom" constant="20" id="B3l-QL-no6"/>
+                <constraint firstAttribute="trailing" secondItem="Nr0-O2-nlp" secondAttribute="trailing" id="CyG-tD-1bk"/>
+                <constraint firstAttribute="trailing" secondItem="1Hz-64-4sk" secondAttribute="trailing" id="GkP-3V-JhU"/>
+                <constraint firstItem="1Hz-64-4sk" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Hjc-FS-4BX"/>
+                <constraint firstItem="eDf-Xb-2I3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Lhx-Tg-ASg"/>
+                <constraint firstAttribute="trailing" secondItem="eDf-Xb-2I3" secondAttribute="trailing" id="VH5-ct-cRd"/>
+                <constraint firstItem="1Hz-64-4sk" firstAttribute="top" secondItem="Nr0-O2-nlp" secondAttribute="bottom" id="XK3-Zu-3XF"/>
+                <constraint firstItem="Nr0-O2-nlp" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="Yga-dm-Zhz"/>
+                <constraint firstAttribute="bottom" secondItem="1Hz-64-4sk" secondAttribute="bottom" constant="22" id="us6-bg-n3P"/>
+            </constraints>
+            <size key="customSize" width="196" height="151"/>
+            <connections>
+                <outlet property="bookCoverImage" destination="eDf-Xb-2I3" id="4IH-O6-kB8"/>
+            </connections>
+            <point key="canvasLocation" x="243.47826086956525" y="132.25446428571428"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="pool-bali" width="1920" height="1282"/>
+    </resources>
+</document>
