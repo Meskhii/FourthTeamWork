@@ -8,6 +8,8 @@
 import UIKit
 
 class SignUpViewController: BaseViewController {
+    
+    
 
     @IBOutlet weak var stackViewFields: UIStackView!
     @IBOutlet weak var signUpBtn: UIButton!

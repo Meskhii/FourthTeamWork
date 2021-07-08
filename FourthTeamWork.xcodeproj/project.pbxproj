@@ -11,6 +11,9 @@
 		D04F6A7D2696FB1D006D7361 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04F6A7C2696FB1D006D7361 /* SignUpViewController.storyboard */; };
 		D04F6A80269701A0006D7361 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F6A7F269701A0006D7361 /* UIColor+Extension.swift */; };
 		D04F6A8426970DCE006D7361 /* TeamWorkTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F6A8326970DCE006D7361 /* TeamWorkTextField.swift */; };
+		D04F6A892697155B006D7361 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D04F6A872697155B006D7361 /* DataModel.xcdatamodeld */; };
+		D04F6A8C2697172B006D7361 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F6A8B2697172B006D7361 /* CoreDataManager.swift */; };
+		D04F6A9126971A12006D7361 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F6A9026971A12006D7361 /* SignUpViewModel.swift */; };
 		EA7955CE2696E033005B9390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955CD2696E033005B9390 /* AppDelegate.swift */; };
 		EA7955D02696E033005B9390 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955CF2696E033005B9390 /* SceneDelegate.swift */; };
 		EA7955D22696E033005B9390 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955D12696E033005B9390 /* MainViewController.swift */; };
@@ -34,6 +37,9 @@
 		D04F6A7C2696FB1D006D7361 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
 		D04F6A7F269701A0006D7361 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		D04F6A8326970DCE006D7361 /* TeamWorkTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamWorkTextField.swift; sourceTree = "<group>"; };
+		D04F6A882697155B006D7361 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
+		D04F6A8B2697172B006D7361 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
+		D04F6A9026971A12006D7361 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = ../../../../../../../SignUpViewModel.swift; sourceTree = "<group>"; };
 		EA7955CA2696E033005B9390 /* FourthTeamWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourthTeamWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7955CD2696E033005B9390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7955CF2696E033005B9390 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -68,8 +74,8 @@
 		D04F6A782696FAFD006D7361 /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
-				D04F6A792696FB0F006D7361 /* SignUpViewController.swift */,
-				D04F6A7C2696FB1D006D7361 /* SignUpViewController.storyboard */,
+				D04F6A8E269719D9006D7361 /* View */,
+				D04F6A8F269719E4006D7361 /* ViewModel */,
 			);
 			path = "Sign Up";
 			sourceTree = "<group>";
@@ -80,6 +86,31 @@
 				D04F6A8326970DCE006D7361 /* TeamWorkTextField.swift */,
 			);
 			path = Reusables;
+			sourceTree = "<group>";
+		};
+		D04F6A8626971549006D7361 /* Persistent */ = {
+			isa = PBXGroup;
+			children = (
+				D04F6A872697155B006D7361 /* DataModel.xcdatamodeld */,
+			);
+			path = Persistent;
+			sourceTree = "<group>";
+		};
+		D04F6A8E269719D9006D7361 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D04F6A792696FB0F006D7361 /* SignUpViewController.swift */,
+				D04F6A7C2696FB1D006D7361 /* SignUpViewController.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D04F6A8F269719E4006D7361 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D04F6A9026971A12006D7361 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		EA7955C12696E033005B9390 = {
@@ -167,6 +198,7 @@
 		EA7955E72696E1CD005B9390 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				D04F6A8626971549006D7361 /* Persistent */,
 				EA7955F52696E6E8005B9390 /* Managers */,
 				EA7955F42696E6E3005B9390 /* Extensions */,
 				EA7955E82696E1EA005B9390 /* Coordinator */,
@@ -209,6 +241,7 @@
 			isa = PBXGroup;
 			children = (
 				EA7956012696E957005B9390 /* NetworkManager.swift */,
+				D04F6A8B2697172B006D7361 /* CoreDataManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -288,7 +321,10 @@
 				EA7955FE2696E8A0005B9390 /* UICollectionView+Extension.swift in Sources */,
 				EA7955F92696E7FE005B9390 /* UITableViewCell+Extension.swift in Sources */,
 				EA7956022696E957005B9390 /* NetworkManager.swift in Sources */,
+				D04F6A892697155B006D7361 /* DataModel.xcdatamodeld in Sources */,
+				D04F6A9126971A12006D7361 /* SignUpViewModel.swift in Sources */,
 				EA7955D22696E033005B9390 /* MainViewController.swift in Sources */,
+				D04F6A8C2697172B006D7361 /* CoreDataManager.swift in Sources */,
 				D04F6A8426970DCE006D7361 /* TeamWorkTextField.swift in Sources */,
 				EA7955F72696E7F1005B9390 /* UITableView+Extension.swift in Sources */,
 				EA7955EE2696E23D005B9390 /* CoordinatorProtocol.swift in Sources */,
@@ -501,6 +537,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D04F6A872697155B006D7361 /* DataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D04F6A882697155B006D7361 /* DataModel.xcdatamodel */,
+			);
+			currentVersion = D04F6A882697155B006D7361 /* DataModel.xcdatamodel */;
+			path = DataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EA7955C22696E033005B9390 /* Project object */;
 }
