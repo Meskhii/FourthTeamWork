@@ -12,4 +12,4 @@ https://github.com/Meskhii/FourthTeamWork/tree/dev/home-page
 https://github.com/Meskhii/FourthTeamWork/tree/SideNav
 
 5.Search page     - ლუკა ბუქური
-https://github.com/Meskhii/FourthTeamWork/tree/sideMenu-%2B-Task
+https://github.com/Meskhii/FourthTeamWork/tree/dev/Search-Page
