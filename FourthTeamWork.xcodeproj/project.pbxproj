@@ -20,6 +20,8 @@
 		EA7955F32696E2AB005B9390 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955F22696E2AB005B9390 /* BaseViewController.swift */; };
 		EA7955F72696E7F1005B9390 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955F62696E7F1005B9390 /* UITableView+Extension.swift */; };
 		EA7955F92696E7FE005B9390 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955F82696E7FE005B9390 /* UITableViewCell+Extension.swift */; };
+		EA7955FE2696E8A0005B9390 /* UICollectionView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955FD2696E8A0005B9390 /* UICollectionView+Extension.swift */; };
+		EA7956002696E8AD005B9390 /* UICollectionViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955FF2696E8AD005B9390 /* UICollectionViewCell+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		EA7955F22696E2AB005B9390 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
 		EA7955F62696E7F1005B9390 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
 		EA7955F82696E7FE005B9390 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
+		EA7955FD2696E8A0005B9390 /* UICollectionView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionView+Extension.swift"; sourceTree = "<group>"; };
+		EA7955FF2696E8AD005B9390 /* UICollectionViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UICollectionViewCell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -165,6 +169,8 @@
 			children = (
 				EA7955F62696E7F1005B9390 /* UITableView+Extension.swift */,
 				EA7955F82696E7FE005B9390 /* UITableViewCell+Extension.swift */,
+				EA7955FD2696E8A0005B9390 /* UICollectionView+Extension.swift */,
+				EA7955FF2696E8AD005B9390 /* UICollectionViewCell+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -247,12 +253,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7955EA2696E229005B9390 /* AppCoordinator.swift in Sources */,
+				EA7955FE2696E8A0005B9390 /* UICollectionView+Extension.swift in Sources */,
 				EA7955F92696E7FE005B9390 /* UITableViewCell+Extension.swift in Sources */,
 				EA7955D22696E033005B9390 /* MainViewController.swift in Sources */,
 				EA7955F72696E7F1005B9390 /* UITableView+Extension.swift in Sources */,
 				EA7955EE2696E23D005B9390 /* CoordinatorProtocol.swift in Sources */,
 				EA7955CE2696E033005B9390 /* AppDelegate.swift in Sources */,
 				EA7955EC2696E233005B9390 /* CoordinatorDelegate.swift in Sources */,
+				EA7956002696E8AD005B9390 /* UICollectionViewCell+Extension.swift in Sources */,
 				EA7955F32696E2AB005B9390 /* BaseViewController.swift in Sources */,
 				EA7955D02696E033005B9390 /* SceneDelegate.swift in Sources */,
 				EA7955F02696E24B005B9390 /* Storyboarded.swift in Sources */,
