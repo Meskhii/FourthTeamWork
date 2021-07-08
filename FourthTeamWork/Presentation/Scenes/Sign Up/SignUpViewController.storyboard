@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Sign Up View Controller-->
+        <scene sceneID="Csx-xu-Fn2">
+            <objects>
+                <viewController storyboardIdentifier="SignUpViewController" id="Ur8-Um-wly" customClass="SignUpViewController" customModule="FourthTeamWork" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="km5-Hs-KCd">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="YIm-ZU-euL">
+                                <rect key="frame" x="20" y="64" width="374" height="360"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="First &amp; Last Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bbh-cq-R7Z" customClass="TeamWorkTextField" customModule="FourthTeamWork" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="56"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="lhG-h4-lE8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="zpb-5e-cjl" customClass="TeamWorkTextField" customModule="FourthTeamWork" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="76" width="374" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Mobile Phone" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xJU-7x-khX" customClass="TeamWorkTextField" customModule="FourthTeamWork" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="152" width="374" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Group Special Code (optional)" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="mMu-6d-Sjb" customClass="TeamWorkTextField" customModule="FourthTeamWork" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="228" width="374" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="WHK-Mw-EE9" customClass="TeamWorkTextField" customModule="FourthTeamWork" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="304" width="374" height="56"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="Xfa-05-tVH">
+                                <rect key="frame" x="20" y="452" width="374" height="24"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WcZ-eu-ri4">
+                                        <rect key="frame" x="0.0" y="0.0" width="30" height="24"/>
+                                        <state key="normal" image="checkEmpty"/>
+                                        <connections>
+                                            <action selector="onCheck:" destination="Ur8-Um-wly" eventType="touchUpInside" id="g9Z-Jy-Uys"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please sign me up for the monthly newsletter." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2N-2S-A5z">
+                                        <rect key="frame" x="45" y="0.0" width="329" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QKy-pv-lrV">
+                                <rect key="frame" x="20" y="513" width="374" height="56"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="56" id="KGo-CH-3XA"/>
+                                </constraints>
+                                <state key="normal" title="Sign Up">
+                                    <color key="titleColor" red="0.3529411764705882" green="0.74117647058823533" blue="0.5490196078431373" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSignUp:" destination="Ur8-Um-wly" eventType="touchUpInside" id="LYx-oC-5wO"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="yMO-rw-EC9"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="yMO-rw-EC9" firstAttribute="trailing" secondItem="QKy-pv-lrV" secondAttribute="trailing" constant="20" id="4MP-D3-qv3"/>
+                            <constraint firstItem="yMO-rw-EC9" firstAttribute="trailing" secondItem="Xfa-05-tVH" secondAttribute="trailing" constant="20" id="9ey-nh-Nap"/>
+                            <constraint firstItem="Xfa-05-tVH" firstAttribute="leading" secondItem="yMO-rw-EC9" secondAttribute="leading" constant="20" id="Bhm-Y1-xca"/>
+                            <constraint firstItem="QKy-pv-lrV" firstAttribute="top" secondItem="Xfa-05-tVH" secondAttribute="bottom" constant="37" id="S8m-5d-oY7"/>
+                            <constraint firstItem="Xfa-05-tVH" firstAttribute="top" secondItem="YIm-ZU-euL" secondAttribute="bottom" constant="28" id="SfG-D8-nn5"/>
+                            <constraint firstItem="yMO-rw-EC9" firstAttribute="trailing" secondItem="YIm-ZU-euL" secondAttribute="trailing" constant="20" id="WPS-wl-8wW"/>
+                            <constraint firstItem="YIm-ZU-euL" firstAttribute="leading" secondItem="yMO-rw-EC9" secondAttribute="leading" constant="20" id="baw-YW-aWG"/>
+                            <constraint firstItem="YIm-ZU-euL" firstAttribute="top" secondItem="yMO-rw-EC9" secondAttribute="top" constant="20" id="oGz-gK-Ae3"/>
+                            <constraint firstItem="QKy-pv-lrV" firstAttribute="leading" secondItem="yMO-rw-EC9" secondAttribute="leading" constant="20" id="vaH-g0-Oro"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="signUpBtn" destination="QKy-pv-lrV" id="LJm-Sh-fYY"/>
+                        <outlet property="stackViewFields" destination="YIm-ZU-euL" id="GAW-NF-b8u"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3yr-Ve-MDg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-236.23188405797103" y="134.59821428571428"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="checkEmpty" width="24" height="24"/>
+    </resources>
+</document>

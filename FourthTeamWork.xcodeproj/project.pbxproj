@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D04F6A7A2696FB0F006D7361 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F6A792696FB0F006D7361 /* SignUpViewController.swift */; };
+		D04F6A7D2696FB1D006D7361 /* SignUpViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04F6A7C2696FB1D006D7361 /* SignUpViewController.storyboard */; };
+		D04F6A80269701A0006D7361 /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F6A7F269701A0006D7361 /* UIColor+Extension.swift */; };
+		D04F6A8426970DCE006D7361 /* TeamWorkTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F6A8326970DCE006D7361 /* TeamWorkTextField.swift */; };
 		EA7955CE2696E033005B9390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955CD2696E033005B9390 /* AppDelegate.swift */; };
 		EA7955D02696E033005B9390 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955CF2696E033005B9390 /* SceneDelegate.swift */; };
 		EA7955D22696E033005B9390 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955D12696E033005B9390 /* MainViewController.swift */; };
@@ -26,6 +30,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D04F6A792696FB0F006D7361 /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		D04F6A7C2696FB1D006D7361 /* SignUpViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignUpViewController.storyboard; sourceTree = "<group>"; };
+		D04F6A7F269701A0006D7361 /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		D04F6A8326970DCE006D7361 /* TeamWorkTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamWorkTextField.swift; sourceTree = "<group>"; };
 		EA7955CA2696E033005B9390 /* FourthTeamWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourthTeamWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7955CD2696E033005B9390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7955CF2696E033005B9390 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -57,6 +65,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D04F6A782696FAFD006D7361 /* Sign Up */ = {
+			isa = PBXGroup;
+			children = (
+				D04F6A792696FB0F006D7361 /* SignUpViewController.swift */,
+				D04F6A7C2696FB1D006D7361 /* SignUpViewController.storyboard */,
+			);
+			path = "Sign Up";
+			sourceTree = "<group>";
+		};
+		D04F6A8226970DAC006D7361 /* Reusables */ = {
+			isa = PBXGroup;
+			children = (
+				D04F6A8326970DCE006D7361 /* TeamWorkTextField.swift */,
+			);
+			path = Reusables;
+			sourceTree = "<group>";
+		};
 		EA7955C12696E033005B9390 = {
 			isa = PBXGroup;
 			children = (
@@ -97,6 +122,7 @@
 		EA7955E22696E14E005B9390 /* Presentation */ = {
 			isa = PBXGroup;
 			children = (
+				D04F6A8226970DAC006D7361 /* Reusables */,
 				EA7955E32696E15A005B9390 /* Scenes */,
 			);
 			path = Presentation;
@@ -105,6 +131,7 @@
 		EA7955E32696E15A005B9390 /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				D04F6A782696FAFD006D7361 /* Sign Up */,
 				EA7955F12696E27A005B9390 /* Base */,
 				EA7955E42696E15E005B9390 /* Main */,
 			);
@@ -173,6 +200,7 @@
 				EA7955F82696E7FE005B9390 /* UITableViewCell+Extension.swift */,
 				EA7955FD2696E8A0005B9390 /* UICollectionView+Extension.swift */,
 				EA7955FF2696E8AD005B9390 /* UICollectionViewCell+Extension.swift */,
+				D04F6A7F269701A0006D7361 /* UIColor+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -245,6 +273,7 @@
 				EA7955DA2696E033005B9390 /* LaunchScreen.storyboard in Resources */,
 				EA7955D72696E033005B9390 /* Assets.xcassets in Resources */,
 				EA7955D52696E033005B9390 /* MainViewController.storyboard in Resources */,
+				D04F6A7D2696FB1D006D7361 /* SignUpViewController.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,9 +289,12 @@
 				EA7955F92696E7FE005B9390 /* UITableViewCell+Extension.swift in Sources */,
 				EA7956022696E957005B9390 /* NetworkManager.swift in Sources */,
 				EA7955D22696E033005B9390 /* MainViewController.swift in Sources */,
+				D04F6A8426970DCE006D7361 /* TeamWorkTextField.swift in Sources */,
 				EA7955F72696E7F1005B9390 /* UITableView+Extension.swift in Sources */,
 				EA7955EE2696E23D005B9390 /* CoordinatorProtocol.swift in Sources */,
 				EA7955CE2696E033005B9390 /* AppDelegate.swift in Sources */,
+				D04F6A7A2696FB0F006D7361 /* SignUpViewController.swift in Sources */,
+				D04F6A80269701A0006D7361 /* UIColor+Extension.swift in Sources */,
 				EA7955EC2696E233005B9390 /* CoordinatorDelegate.swift in Sources */,
 				EA7956002696E8AD005B9390 /* UICollectionViewCell+Extension.swift in Sources */,
 				EA7955F32696E2AB005B9390 /* BaseViewController.swift in Sources */,
@@ -416,6 +448,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "FourthTeamWork/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -434,6 +467,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = "FourthTeamWork/Supporting Files/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
