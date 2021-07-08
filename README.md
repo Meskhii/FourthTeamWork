@@ -1,8 +1,8 @@
 # FourthTeamWork
 
 1. Welcome page - ანა მეფისაშვილი
-2. 
-3.SignIn/SignUp   - ლიზი ჩიჩუა
+
+2.SignIn/SignUp   - ლიზი ჩიჩუა
 https://github.com/Meskhii/FourthTeamWork/tree/dev/Welcome-Page
 
 3.Home page       - გიორგი მესხი 
