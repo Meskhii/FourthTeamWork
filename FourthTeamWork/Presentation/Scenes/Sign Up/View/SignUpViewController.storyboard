@@ -61,7 +61,7 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please sign me up for the monthly newsletter." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O2N-2S-A5z">
                                         <rect key="frame" x="45" y="0.0" width="329" height="24"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="12"/>
-                                        <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="textColor" red="0.12941176469999999" green="0.12941176469999999" blue="0.12941176469999999" alpha="0.5" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -94,6 +94,10 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="fieldEmail" destination="zpb-5e-cjl" id="mYk-P2-OMY"/>
+                        <outlet property="fieldFullName" destination="Bbh-cq-R7Z" id="SVf-WX-2E8"/>
+                        <outlet property="fieldPassword" destination="WHK-Mw-EE9" id="wFa-Mu-QTn"/>
+                        <outlet property="fieldPhone" destination="xJU-7x-khX" id="OQf-Ji-N9D"/>
                         <outlet property="signUpBtn" destination="QKy-pv-lrV" id="LJm-Sh-fYY"/>
                         <outlet property="stackViewFields" destination="YIm-ZU-euL" id="GAW-NF-b8u"/>
                     </connections>

@@ -21,7 +21,7 @@ final class AppCoordinator: CoordinatorProtocol {
     }
     
     func start() {
-        let vc = SignUpViewController.instantiateFromStoryboard()
+        let vc = SignInViewController.instantiateFromStoryboard()
         vc.coordinator = self
         navigationController?.navigationBar.isHidden = true
         navigationController?.pushViewController(vc, animated: true)
