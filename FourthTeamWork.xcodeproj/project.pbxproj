@@ -18,6 +18,8 @@
 		EA7955EE2696E23D005B9390 /* CoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955ED2696E23D005B9390 /* CoordinatorProtocol.swift */; };
 		EA7955F02696E24B005B9390 /* Storyboarded.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955EF2696E24B005B9390 /* Storyboarded.swift */; };
 		EA7955F32696E2AB005B9390 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955F22696E2AB005B9390 /* BaseViewController.swift */; };
+		EA7955F72696E7F1005B9390 /* UITableView+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955F62696E7F1005B9390 /* UITableView+Extension.swift */; };
+		EA7955F92696E7FE005B9390 /* UITableViewCell+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955F82696E7FE005B9390 /* UITableViewCell+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -34,6 +36,8 @@
 		EA7955ED2696E23D005B9390 /* CoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorProtocol.swift; sourceTree = "<group>"; };
 		EA7955EF2696E24B005B9390 /* Storyboarded.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storyboarded.swift; sourceTree = "<group>"; };
 		EA7955F22696E2AB005B9390 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		EA7955F62696E7F1005B9390 /* UITableView+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+Extension.swift"; sourceTree = "<group>"; };
+		EA7955F82696E7FE005B9390 /* UITableViewCell+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableViewCell+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +134,8 @@
 		EA7955E72696E1CD005B9390 /* Infrastructure */ = {
 			isa = PBXGroup;
 			children = (
+				EA7955F52696E6E8005B9390 /* Managers */,
+				EA7955F42696E6E3005B9390 /* Extensions */,
 				EA7955E82696E1EA005B9390 /* Coordinator */,
 			);
 			path = Infrastructure;
@@ -152,6 +158,22 @@
 				EA7955F22696E2AB005B9390 /* BaseViewController.swift */,
 			);
 			path = Base;
+			sourceTree = "<group>";
+		};
+		EA7955F42696E6E3005B9390 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA7955F62696E7F1005B9390 /* UITableView+Extension.swift */,
+				EA7955F82696E7FE005B9390 /* UITableViewCell+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA7955F52696E6E8005B9390 /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -225,7 +247,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA7955EA2696E229005B9390 /* AppCoordinator.swift in Sources */,
+				EA7955F92696E7FE005B9390 /* UITableViewCell+Extension.swift in Sources */,
 				EA7955D22696E033005B9390 /* MainViewController.swift in Sources */,
+				EA7955F72696E7F1005B9390 /* UITableView+Extension.swift in Sources */,
 				EA7955EE2696E23D005B9390 /* CoordinatorProtocol.swift in Sources */,
 				EA7955CE2696E033005B9390 /* AppDelegate.swift in Sources */,
 				EA7955EC2696E233005B9390 /* CoordinatorDelegate.swift in Sources */,
