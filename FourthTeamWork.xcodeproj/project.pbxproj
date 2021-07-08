@@ -13,9 +13,9 @@
 		D04F6A8426970DCE006D7361 /* TeamWorkTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F6A8326970DCE006D7361 /* TeamWorkTextField.swift */; };
 		D04F6A892697155B006D7361 /* DataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D04F6A872697155B006D7361 /* DataModel.xcdatamodeld */; };
 		D04F6A8C2697172B006D7361 /* CoreDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F6A8B2697172B006D7361 /* CoreDataManager.swift */; };
-		D04F6A9126971A12006D7361 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F6A9026971A12006D7361 /* SignUpViewModel.swift */; };
 		D04F6A9626971F98006D7361 /* SignInViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F6A9526971F97006D7361 /* SignInViewController.swift */; };
 		D04F6A9926971FAB006D7361 /* SignInViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D04F6A9826971FAB006D7361 /* SignInViewController.storyboard */; };
+		D04F6AA226977CBA006D7361 /* SignUpViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D04F6AA126977CBA006D7361 /* SignUpViewModel.swift */; };
 		EA7955CE2696E033005B9390 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955CD2696E033005B9390 /* AppDelegate.swift */; };
 		EA7955D02696E033005B9390 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955CF2696E033005B9390 /* SceneDelegate.swift */; };
 		EA7955D22696E033005B9390 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA7955D12696E033005B9390 /* MainViewController.swift */; };
@@ -41,9 +41,9 @@
 		D04F6A8326970DCE006D7361 /* TeamWorkTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamWorkTextField.swift; sourceTree = "<group>"; };
 		D04F6A882697155B006D7361 /* DataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = DataModel.xcdatamodel; sourceTree = "<group>"; };
 		D04F6A8B2697172B006D7361 /* CoreDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataManager.swift; sourceTree = "<group>"; };
-		D04F6A9026971A12006D7361 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = SignUpViewModel.swift; path = ../../../../../../../SignUpViewModel.swift; sourceTree = "<group>"; };
 		D04F6A9526971F97006D7361 /* SignInViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewController.swift; sourceTree = "<group>"; };
 		D04F6A9826971FAB006D7361 /* SignInViewController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SignInViewController.storyboard; sourceTree = "<group>"; };
+		D04F6AA126977CBA006D7361 /* SignUpViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewModel.swift; sourceTree = "<group>"; };
 		EA7955CA2696E033005B9390 /* FourthTeamWork.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourthTeamWork.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA7955CD2696E033005B9390 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA7955CF2696E033005B9390 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -78,8 +78,8 @@
 		D04F6A782696FAFD006D7361 /* Sign Up */ = {
 			isa = PBXGroup;
 			children = (
+				D04F6AA026977CA4006D7361 /* ViewModel */,
 				D04F6A8E269719D9006D7361 /* View */,
-				D04F6A8F269719E4006D7361 /* ViewModel */,
 			);
 			path = "Sign Up";
 			sourceTree = "<group>";
@@ -109,14 +109,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		D04F6A8F269719E4006D7361 /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-				D04F6A9026971A12006D7361 /* SignUpViewModel.swift */,
-			);
-			path = ViewModel;
-			sourceTree = "<group>";
-		};
 		D04F6A9326971F5D006D7361 /* Sign In */ = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +124,14 @@
 				D04F6A9826971FAB006D7361 /* SignInViewController.storyboard */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		D04F6AA026977CA4006D7361 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D04F6AA126977CBA006D7361 /* SignUpViewModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		EA7955C12696E033005B9390 = {
@@ -342,10 +342,10 @@
 			files = (
 				EA7955EA2696E229005B9390 /* AppCoordinator.swift in Sources */,
 				EA7955FE2696E8A0005B9390 /* UICollectionView+Extension.swift in Sources */,
+				D04F6AA226977CBA006D7361 /* SignUpViewModel.swift in Sources */,
 				EA7955F92696E7FE005B9390 /* UITableViewCell+Extension.swift in Sources */,
 				EA7956022696E957005B9390 /* NetworkManager.swift in Sources */,
 				D04F6A892697155B006D7361 /* DataModel.xcdatamodeld in Sources */,
-				D04F6A9126971A12006D7361 /* SignUpViewModel.swift in Sources */,
 				EA7955D22696E033005B9390 /* MainViewController.swift in Sources */,
 				D04F6A8C2697172B006D7361 /* CoreDataManager.swift in Sources */,
 				D04F6A9626971F98006D7361 /* SignInViewController.swift in Sources */,
