@@ -17,18 +17,19 @@ final class AppCoordinator: CoordinatorProtocol {
     init(_ window: UIWindow?, navigationController: UINavigationController?) {
         self.window = window
         self.navigationController = navigationController
+       
         
     }
     
     func start() {
-        let vc = HomeViewController.instantiateFromStoryboard()
+        let vc = OnBoardingViewController.instantiateFromStoryboard()
         vc.coordinator = self
-        navigationController?.navigationBar.isHidden = true
         navigationController?.pushViewController(vc, animated: true)
-        
+
         window?.rootViewController = navigationController
         window?.makeKeyAndVisible()
     }
+
     
     func popViewController() {
         navigationController?.popViewController(animated: true)

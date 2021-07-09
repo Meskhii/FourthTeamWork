@@ -2,8 +2,9 @@
 //  NetworkManager.swift
 //  FourthTeamWork
 //
-//  Created by user200328 on 7/8/21.
+//  Created by Ana Mepisashvili on 08.07.21.
 //
+
 
 import Foundation
 
